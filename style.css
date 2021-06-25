@@ -1,0 +1,79 @@
+body {
+    background: #222;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+    margin: 1em;
+    background: #000000d7;
+    width: 100%;
+    border-radius: 30px;
+    padding: 2em;
+    color: white;
+    max-width: 420px;
+}
+.search{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.search-bar:hover{
+    background: #7c7c7c6b;
+}
+button{
+    width: 2.5em;
+    height: 2.5em;
+    border: none;
+    border-radius: 30px;
+    margin: 1.5em;
+    color: white;
+    background: #7c7c7c2b;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+}
+button:hover{
+    background: #7c7c7c6b;
+}
+.search-bar{
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    padding: 0.5em 1em;
+    color: white;
+    font-family: inherit;
+    background: #7c7c7c2b;
+}
+
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+.description {
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+weather.loading::after{
+    visibility: visible;
+    content: "loading...";
+    color: white;
+    position: absolute;
+    top : 0;
+    left : 20px;
+}
